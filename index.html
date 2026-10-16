@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola Mundo | Deploy automático EC2</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: #f8fafc;
+      padding: 1.5rem;
+    }
+
+    .card {
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    h1 { font-size: 2.4rem; margin-bottom: 0.5rem; }
+
+    .subtitle { color: #cbd5e1; margin-bottom: 1.5rem; }
+
+    .badge {
+      display: inline-block;
+      background: #22c55e;
+      color: #052e16;
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      margin-bottom: 1.5rem;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .stack span {
+      background: rgba(255, 255, 255, 0.12);
+      padding: 0.4rem 0.9rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    footer { font-size: 0.8rem; color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Hola Mundo 🚀</h1>
+    <p class="subtitle">Deploy automático V3</p>
+
+    <div class="badge">● Despliegue exitoso</div>
+
+    <div class="stack">
+      <span>GitHub</span>
+      <span>GitHub Actions</span>
+      <span>AWS EC2</span>
+      <span>Apache</span>
+    </div>
+
+    <footer>
+      Cada <code>git push</code> a <strong>main</strong> actualiza este sitio automáticamente.
+    </footer>
+  </main>
+</body>
+</html>
